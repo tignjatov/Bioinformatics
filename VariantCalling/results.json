@@ -1,0 +1,26 @@
+{
+  "fastqc": {
+    "read1_html": "results/01_fastqc/sample_0.chrom11.exome.pe1_fastqc.html",
+    "read2_html": "results/01_fastqc/sample_0.chrom11.exome.pe2_fastqc.html"
+  },
+  "mapping": {
+    "sam": "results/02_mapping/aligned.sam",
+    "bam": "results/02_mapping/aligned.bam",
+    "sorted_bam": "results/02_mapping/sorted.bam",
+    "index": "results/02_mapping/sorted.bam.bai"
+  },
+  "deduplication": {
+    "bam": "results/03_dedup/dedup.bam",
+    "index": "results/03_dedup/dedup.bai",
+    "metrics": "results/03_dedup/dup_metrics.txt"
+  },
+  "bqsr": {
+    "recal_data": "results/04_bqsr/recal_data.table",
+    "bam": "results/04_bqsr/recalibrated.bam",
+    "index": "results/04_bqsr/recalibrated.bai"
+  },
+  "variants": {
+    "raw_vcf": "results/05_haplotypecaller/raw_variants.vcf",
+    "filtered_vcf": "results/06_filtering/filtered_variants.vcf.gz"
+  }
+}
